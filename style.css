@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: "gilroy";
+    width: 100%;
+}
+nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 130px;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+nav .top{
+    height: 70px;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 200px;
+    border-bottom: .5px solid rgb(59, 59, 59);
+}
+nav .top .left{
+    display: flex;
+    /* background-color: brown; */
+}
+nav .top .left ul{
+    padding: 0 5px;
+}
+
+nav .top .left ul:nth-child(1) li{
+    border-radius: 100%;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(75, 75, 255);;
+    position: relative;
+}
+nav .top .left ul:nth-child(1) li i,
+nav .top .right li:nth-child(1) i,
+nav .top .right li:nth-child(2) i
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+nav .top .left ul li,
+nav .top .right li
+{
+    text-decoration: none;
+    list-style-type: none;
+}
+nav .center h2{
+    font-size: 30px;
+    margin-left: -100px;
+}
+nav .top .right {
+    display: flex;
+}
+nav .top .right li:nth-child(1){
+        border-radius: 100%;
+        font-size: 20px;
+        height: 40px;
+        width: 40px;
+        border: 2px solid white;
+        position: relative;
+}
+nav .top .right li:nth-child(2){
+    font-size: 30px;
+    position: relative;
+    margin-left: 20px;
+}
+
+nav .btm{
+    height: 60px;
+    width: 100%;
+    /* background-color: rgb(80, 90, 181); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 200px;
+}
+nav .btm ul{
+    display: flex;
+}
+nav .btm ul li:hover{
+    text-decoration: underline;
+}
+.btn:hover{
+    background-color: rgb(101, 101, 255);
+}
+nav .btm ul:nth-child(1) li{
+    font-size: 30px;
+    list-style: none;
+    margin: 5px;
+    border-radius: 100%;
+    border: 1px solid white;
+    height: 40px;
+    width: 40px;
+    position: relative;
+}
+nav .btm ul:nth-child(1) li i{
+    font-size: 25px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+nav .btm ul:nth-child(2) li{
+    font-size: 17px;
+    list-style: none;
+    padding: 10px;
+}
+.btn{
+    padding: 10px 15px;
+    background-color: rgb(75, 75, 255);
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+}
+
+.first{
+    height: 100vh;
+    width: 100%;
+    /* background-color: #aa5151; */
+    background-image: url(https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.521);
+    height: 100%;
+    width: 100%;
+}
+.first>.mid-txt{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 60%;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+}
+.first>.mid-txt h1{
+    font-size: 80px;
+}
+
+.first>.mid-txt p{
+    font-size: 15px;
+    padding-top: 20px;
+}
+.main-btn{
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.main-btn .btn{
+    font-size: 20px;
+    padding: 15px 25px;
+    border-radius: 50px;
+}
+
+
+
+.second{
+    height: 100vh;
+    width: 100%;
+    /* background-color: antiquewhite; */
+}
+.second .second-midtxt,
+.third .second-midtxt,
+.fourth .second-midtxt
+{
+    height: 30vh;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 0 320px;
+}
+.second .second-midtxt h5,
+.third .second-midtxt h5,
+.fourth .second-midtxt h5{
+    color: rgb(0, 187, 255);
+    font-size: 18px;
+    margin-top: 50px;
+}
+.second .second-midtxt h2,
+.third .second-midtxt h2,
+.fourth .second-midtxt h2{
+    font-size: 40px;
+}
+
+.cards{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 150px;
+}
+.cards .card{
+    height: 410px;
+    width: 330px;
+    border-radius: 50px;
+    /* background-color: burlywood; */
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 25px;
+}
+.cards .card:nth-child(1){
+    background-image: url(https://images.unsplash.com/photo-1534445867742-43195f401b6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80);
+
+}
+.cards .card:nth-child(2){
+    background-image: url(https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80);
+
+}
+.cards .card:nth-child(3){
+    background-image: url(https://images.unsplash.com/photo-1589908234698-8e38077ca1f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80
+    );
+}
+.cards .card .card-txt{
+    height: 140px;
+    width: 280px;
+    position: absolute;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    bottom: -12%;
+    left: 50%;
+    border-radius: 30px;
+    padding: 10px;
+}
+.card-txt h4{
+    color: rgb(75, 75, 255);
+}
+.card-txt .stars{
+    position: absolute;
+    height: 30px;
+    width: 110px;
+    background-color: rgb(75, 75, 255) ;
+    top: -12%;
+    right: 10%;
+    border-radius: 50px;
+}
+.card-txt .stars i{
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 22%;
+    left: 8%;
+    color: #fff;
+}
+
+.third{
+    height: 120vh;
+    width: 100%;
+    /* background-color: aqua; */
+}
+.third .third-content{
+    height: 90vh;
+    width: 100%;
+    /* background-color: rgb(139, 134, 114); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 160px;
+}
+.third .third-content .left,
+.third .third-content .center,
+.third .third-content .right{
+    height: 585px;
+    width: 380px;
+    /* background-color: aquamarine; */
+    position: relative;
+}
+.third .third-content .left .top{
+    height: 56%;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border-radius: 35px;
+    left: 50%;
+    top: 28%;
+    /* background-color: chartreuse; */
+    background-image: url(https://images.unsplash.com/photo-1565799515768-2dcfd834625c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1838&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.third .third-content .left .btm{
+    height: 45%;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border-radius: 35px;
+    left: 50%;
+    bottom: -26%;
+    /* background-color: rgb(97, 105, 88); */
+    background-image: url(https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.third .third-content .center .top{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border-radius: 35px;
+    left: 50%;
+    top: 50%;
+    /* background-color: chartreuse; */
+    background-image: url(https://images.unsplash.com/photo-1549191044-261643adbec7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.third .third-content .right .top{
+    height: 49%;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border-radius: 35px;
+    left: 50%;
+    top: 24.5%;
+    /* background-color: chartreuse; */
+    background-image: url(https://images.unsplash.com/photo-1605429523419-d828acb941d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.third .third-content .right .btm{
+    height: 49%;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border-radius: 35px;
+    left: 50%;
+    bottom: -24.5%;
+    /* background-color: chartreuse; */
+    background-image: url(https://images.unsplash.com/photo-1573512443418-c6768862dda7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fourth{
+    height: 100vh;
+    width: 100%;
+    /* background-color: cadetblue; */
+}
+
+.fourth .fourth-content{
+    height: 70vh;
+    width: 100%;
+    /* background-color: cornflowerblue; */
+}
+
+.fourth-content .cards2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 150px;
+}
+
+.fourth-content .cards2 .card2{
+   height: 250px; 
+   width: 350px;
+   background-color: rgb(255, 255, 255);
+   border-radius: 25px;
+   box-shadow: 2px 2px rgb(174, 174, 174);
+   border: 1px solid rgb(224, 224, 224);
+   position: relative;
+}
+.card2 .stars{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: rgb(75, 75, 255);
+}
+.card2 p{
+    position: absolute;
+    top: 22%;
+    left: 20px;
+    color: #484848;
+}
+.card2 .main .left{
+    position: absolute;
+    top: 62%;
+    left: 35px;
+    height: 60px;
+    border-radius: 50px;
+    width: 60px;
+    /* background-color: chocolate; */
+    background-image: url(https://images.unsplash.com/photo-1554126807-6b10f6f6692a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-position: center;
+    background-size: cover;
+}
+.card2 .main .right{
+    position: absolute;
+    top: 65%;
+    left: 110px;
+    height: 60px;
+    width: 200px;
+    /* background-color: chocolate; */
+}
+.card2 .main .right h3{
+    color: rgb(57, 57, 57);
+}
+.card2 .main .right h5{
+    color: rgb(75, 75, 255);
+}
